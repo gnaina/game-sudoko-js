@@ -1,0 +1,25 @@
+{
+  "name": "game-sudoko",
+  "version": "1.0.0",
+  "description": "Sudoko solving using my skills and problem solving.",
+  "main": "index.js",
+  "scripts": {
+    "start" : "node server/index.js",
+    "build": "cd client && npm install && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gnaina/game-sudoko-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gnaina/game-sudoko-js/issues"
+  },
+  "homepage": "https://github.com/gnaina/game-sudoko-js#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
