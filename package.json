@@ -4,8 +4,10 @@
   "description": "Sudoko solving using my skills and problem solving.",
   "main": "index.js",
   "scripts": {
-    "start" : "node server/index.js",
+    "start": "node server/index.js",
     "build": "cd client && npm install && npm run build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,8 +20,9 @@
   "bugs": {
     "url": "https://github.com/gnaina/game-sudoko-js/issues"
   },
-  "homepage": "https://github.com/gnaina/game-sudoko-js#readme",
+  "homepage": "https://gnaina.github.io/game-sudoko-js",
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "gh-pages": "^4.0.0"
   }
 }
