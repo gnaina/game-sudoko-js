@@ -1,6 +1,6 @@
 # game-sudoko-js
 Sudoko solving using my skills and problem solving.
-inspriration for project setup
+arinspriration for project
 https://www.freecodecamp.org/news/how-to-create-a-react-app-with-a-node-backend-the-complete-guide/
 
 
@@ -18,6 +18,19 @@ To rendering Solved puzziles
 
 
 Server side:
-Http service to recive required info ( question, meta data)
-Puzzle solver.
+to run the server code run node server/app/index.js
+server/
+    ai-code  // code genrated from AI.
+        index.js
+    app  // My solution human logic.
+        index.js  -- entry 
+        prepareData.js 
+        baseAnalysis.js
+        lineAnalysis.js
+        updateBoard.js
+
+
+    data
+        smaple.js -- array of problems which this program worked.
+
 

@@ -6,16 +6,19 @@ const appBuildPath = '../client/build';
 
 const app = express();
 
+const path2 = path.resolve(__dirname, appBuildPath);
+
 app.use(express.static(path.resolve(__dirname, appBuildPath)));
 
 app.get("/sudoko", (req, res) => {
-    console.log(`Server listening on ${req}`);
+    console.log(`Server listening on ${path2}`);
     res.json({message: "Greetngs from Sudko App"});
 });
 
 app.get('*', (req, res) => {
     console.log(`Server listening on ${req}`);
-    // res.sendFile(path.resolve(__dirname, appBuildPath, 'index.html'));
+    
+    res.sendFile(path.resolve(__dirname, appBuildPath, 'index.html'));
 });
 
 app.listen(PORT, () => {
@@ -25,7 +28,9 @@ app.listen(PORT, () => {
 
 
 function initApp() {
-    console.log("OM SHIVA");
+    console.log(path2);
 }
+
+
 
 initApp();
